@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RentDito</string>
+    <string name="error_web_fragment">No Internet Connection</string>
+    <string name="error_web_fragment_description">Please check your Internet connectivity. Turn on your mobile data or Wi-fi, and pull-to-refresh to try again in a minute.</string>
+    <string name="logo_description">RentDito Logo</string>
+</resources>
