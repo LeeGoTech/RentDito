@@ -20,7 +20,7 @@
             android:name=".MainActivity"
             android:launchMode="singleInstance"
             android:theme="@style/Theme.RentDito"
-            android:windowSoftInputMode="adjustPan"
+            android:windowSoftInputMode="adjustResize"
             android:exported="true">
 
             <intent-filter>
