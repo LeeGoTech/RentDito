@@ -97,6 +97,16 @@ public class LibrariesForLibs extends AbstractExternalDependencyFactory {
         }
 
         /**
+         * Dependency provider for <b>browser</b> with <b>androidx.browser:browser</b> coordinates and
+         * with version reference <b>browser</b>
+         * <p>
+         * This dependency was declared in catalog libs.versions.toml
+         */
+        public Provider<MinimalExternalModuleDependency> getBrowser() {
+            return create("androidx.browser");
+        }
+
+        /**
          * Dependency provider for <b>junit</b> with <b>androidx.test.ext:junit</b> coordinates and
          * with version reference <b>junitVersion</b>
          * <p>
@@ -187,6 +197,16 @@ public class LibrariesForLibs extends AbstractExternalDependencyFactory {
          * This version was declared in catalog libs.versions.toml
          */
         public Provider<String> getAppcompat() { return getVersion("appcompat"); }
+
+        /**
+         * Version alias <b>browser</b> with value <b>1.8.0</b>
+         * <p>
+         * If the version is a rich version and cannot be represented as a
+         * single version string, an empty string is returned.
+         * <p>
+         * This version was declared in catalog libs.versions.toml
+         */
+        public Provider<String> getBrowser() { return getVersion("browser"); }
 
         /**
          * Version alias <b>coreKtx</b> with value <b>1.13.1</b>

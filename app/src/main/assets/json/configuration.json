@@ -5,13 +5,35 @@
   "rules": [
     {
       "patterns": [
+        "^/$",
+        "/sign_in$"
+      ],
+      "properties": {
+        "uri": "turbo://fragment/web/home",
+        "context": "default",
+        "fallback_uri": "turbo://fragment/web/home",
+        "presentation": "replace_root"
+      }
+    },
+    {
+      "patterns": [
         ".*"
       ],
       "properties": {
         "context": "default",
         "uri": "turbo://fragment/web",
-        "pull_to_refresh_enabled": true,
-        "title": ""
+        "fallback_uri": "turbo://fragment/web",
+        "pull_to_refresh_enabled": true
+      }
+    },
+    {
+      "patterns": [
+        ".*\/new$"
+      ],
+      "properties": {
+        "context": "modal",
+        "uri": "turbo://fragment/web/modal",
+        "pull_to_refresh_enabled": false
       }
     }
   ]
