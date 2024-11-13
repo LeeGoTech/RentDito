@@ -1,24 +1,18 @@
-package com.rentdito.android
+package com.rentdito.android.web
 
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import dev.hotwire.turbo.errors.TurboVisitError
-import dev.hotwire.turbo.fragments.TurboWebFragment
+import com.rentdito.android.R
 import dev.hotwire.turbo.nav.TurboNavGraphDestination
+import dev.hotwire.turbo.errors.TurboVisitError
 
-@TurboNavGraphDestination(uri = "turbo://fragment/web")
-class WebFragment : TurboWebFragment() {
-
+@TurboNavGraphDestination(uri = "turbo://fragment/web/home")
+class WebHomeFragment : WebFragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.web_fragment, container, false)
-    }
-
-    @SuppressLint("InflateParams")
-    override fun createProgressView(location: String): View {
-        return layoutInflater.inflate(R.layout.turbo_progress, null)
     }
 
     @SuppressLint("InflateParams")
