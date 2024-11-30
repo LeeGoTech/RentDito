@@ -3,6 +3,10 @@
 
     <!--Bottom Sheets -->
 
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:background">#F3FFFFFF</item>
+    </style>
+
     <style name="ThemeOverlay.MyTheme.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
         <item name="android:windowIsFloating">false</item>
         <item name="android:windowBackground">@color/transparent</item>
